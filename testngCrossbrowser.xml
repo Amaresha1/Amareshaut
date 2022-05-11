@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">
+  <test  name="Test-Runner-Chrome">
+  <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="com.crm.comcast.vendorsTest.Campains"/>
+      <class name="com.crm.comcast.contactsTest.Editcontactpom"/>
+      <class name="com.crm.comcast.contactsTest.Createcontactpom"/>
+    </classes>
+  </test> <!-- Test -->
+   <test  name="Test-Runner-Firefox">
+   <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="com.crm.comcast.vendorsTest.Campains"/>
+      <class name="com.crm.comcast.contactsTest.Editcontactpom"/>
+      <class name="com.crm.comcast.contactsTest.Createcontactpom"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+ 
